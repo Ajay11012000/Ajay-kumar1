@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of Ajay kumar</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --secondary: #232946;
+      --accent: #EFCB68;
+      --bg: #F2F2F2;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      font-family: 'Roboto', Arial, sans-serif;
+      color: var(--secondary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 2rem 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .about img {
+      width: 130px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid var(--primary);
+      box-shadow: 0 3px 10px rgba(108,99,255,0.13);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(108,99,255,0.07);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .project-card:hover {
+      box-shadow: 0 8px 32px rgba(108,99,255,0.20);
+      transform: translateY(-8px) scale(1.03);
+    }
+    .project-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.7rem;
+    }
+    .project-card p {
+      margin-bottom: 1rem;
+    }
+    .project-card a {
+      color: var(--secondary);
+      background: var(--accent);
+      padding: 0.4em 1.3em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .project-card a:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem 0 1rem 0;
+      margin-top: 3rem;
+      font-size: 1rem;
+      position: relative;
+      letter-spacing: 1px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 2rem 0.5rem; }
+      .projects { gap: 1rem; }
+      .about img { width: 90px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ajay kumar</h1>
+    <p>Creative Coder • Designer • Dreamer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <img src="C:\Users\ASUS\OneDrive\Pictures\Screenshots\Screenshot 2025-07-31 200424.png"" alt="insert image">
+    <h2>Hello!</h2>
+    <p>
+      I'm Ajay kumar, a web developer passionate about crafting stunning web experiences.<br>
+      I love combining creativity, design, and code to build unique digital products.<br>
+      Let's create something amazing together!
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align:center;margin-bottom:2rem;">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Redefined</h3>
+        <p>A blazing fast, fully responsive portfolio template with interactive animations and a custom CMS integration.</p>
+        <a href="#">View Project</a>
+
+      </div>
+      <div class="project-card">
+        <h3>Recipe Explorer</h3>
+        <p>Discover, save, and share your favorite recipes. Built with React and a touch of delicious UX.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Mindful Journal</h3>
+        <p>A journaling app to improve mindfulness, mood, and productivity, with beautiful graphs and reminders.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="text-align:center;">
+    <h2>Contact</h2>
+    <p>Let's connect and collaborate!<br>
+      <b> Mobile no. : </b> <a href="9871562651 , 8082189908">9871562651 , 8082189908</a><br>
+      <b>Email:</b> <a href="mailto:ak5951657@gmail.com">ak5951657@gmail.com</a>
+
+    </p>
+<p> LinkedIn: <a href="https://www.linkedin.com/in/ajay-kumar-ab750a28a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVh7Ffi3MRKWc%2BPGYXBQsBg%3D%3D">www.linkedin.com/in/ajay-kumar-ab750a28aS</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ajay kumar. Made with ❤ and lots of creativity.
+  </footer>
+</body>
+</html>
